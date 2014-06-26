@@ -14,13 +14,18 @@
 		9A6ACCDC195C3BF3001A4485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACCDB195C3BF3001A4485 /* main.m */; };
 		9A6ACCE0195C3BF3001A4485 /* iOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACCDF195C3BF3001A4485 /* iOSAppDelegate.m */; };
 		9A6ACCE3195C3BF3001A4485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6ACCE1195C3BF3001A4485 /* Main.storyboard */; };
-		9A6ACCE6195C3BF3001A4485 /* iOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACCE5195C3BF3001A4485 /* iOSViewController.m */; };
 		9A6ACCE8195C3BF3001A4485 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6ACCE7195C3BF3001A4485 /* Images.xcassets */; };
 		9A6ACCEF195C3BF3001A4485 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6ACCEE195C3BF3001A4485 /* XCTest.framework */; };
 		9A6ACCF0195C3BF3001A4485 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6ACCCF195C3BF2001A4485 /* Foundation.framework */; };
 		9A6ACCF1195C3BF3001A4485 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6ACCD3195C3BF2001A4485 /* UIKit.framework */; };
 		9A6ACCF9195C3BF3001A4485 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A6ACCF7195C3BF3001A4485 /* InfoPlist.strings */; };
 		9A6ACCFB195C3BF3001A4485 /* TimeTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACCFA195C3BF3001A4485 /* TimeTableTests.m */; };
+		9A6ACD06195C3C4A001A4485 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACD05195C3C4A001A4485 /* TimeViewController.m */; };
+		9A6ACD09195C3D06001A4485 /* MonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACD08195C3D06001A4485 /* MonViewController.m */; };
+		9A6ACD0C195C3D2D001A4485 /* TueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACD0B195C3D2D001A4485 /* TueViewController.m */; };
+		9A6ACD0F195C3D3C001A4485 /* WedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACD0E195C3D3C001A4485 /* WedViewController.m */; };
+		9A6ACD12195C3D87001A4485 /* ThuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACD11195C3D87001A4485 /* ThuViewController.m */; };
+		9A6ACD15195C3D94001A4485 /* FriViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6ACD14195C3D94001A4485 /* FriViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +50,24 @@
 		9A6ACCDE195C3BF3001A4485 /* iOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSAppDelegate.h; sourceTree = "<group>"; };
 		9A6ACCDF195C3BF3001A4485 /* iOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSAppDelegate.m; sourceTree = "<group>"; };
 		9A6ACCE2195C3BF3001A4485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A6ACCE4195C3BF3001A4485 /* iOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSViewController.h; sourceTree = "<group>"; };
-		9A6ACCE5195C3BF3001A4485 /* iOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSViewController.m; sourceTree = "<group>"; };
 		9A6ACCE7195C3BF3001A4485 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A6ACCED195C3BF3001A4485 /* TimeTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6ACCEE195C3BF3001A4485 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9A6ACCF6195C3BF3001A4485 /* TimeTableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimeTableTests-Info.plist"; sourceTree = "<group>"; };
 		9A6ACCF8195C3BF3001A4485 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A6ACCFA195C3BF3001A4485 /* TimeTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeTableTests.m; sourceTree = "<group>"; };
+		9A6ACD04195C3C4A001A4485 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		9A6ACD05195C3C4A001A4485 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		9A6ACD07195C3D06001A4485 /* MonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonViewController.h; sourceTree = "<group>"; };
+		9A6ACD08195C3D06001A4485 /* MonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonViewController.m; sourceTree = "<group>"; };
+		9A6ACD0A195C3D2D001A4485 /* TueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TueViewController.h; sourceTree = "<group>"; };
+		9A6ACD0B195C3D2D001A4485 /* TueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TueViewController.m; sourceTree = "<group>"; };
+		9A6ACD0D195C3D3C001A4485 /* WedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WedViewController.h; sourceTree = "<group>"; };
+		9A6ACD0E195C3D3C001A4485 /* WedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WedViewController.m; sourceTree = "<group>"; };
+		9A6ACD10195C3D87001A4485 /* ThuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThuViewController.h; sourceTree = "<group>"; };
+		9A6ACD11195C3D87001A4485 /* ThuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThuViewController.m; sourceTree = "<group>"; };
+		9A6ACD13195C3D94001A4485 /* FriViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriViewController.h; sourceTree = "<group>"; };
+		9A6ACD14195C3D94001A4485 /* FriViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +130,18 @@
 				9A6ACCDE195C3BF3001A4485 /* iOSAppDelegate.h */,
 				9A6ACCDF195C3BF3001A4485 /* iOSAppDelegate.m */,
 				9A6ACCE1195C3BF3001A4485 /* Main.storyboard */,
-				9A6ACCE4195C3BF3001A4485 /* iOSViewController.h */,
-				9A6ACCE5195C3BF3001A4485 /* iOSViewController.m */,
+				9A6ACD04195C3C4A001A4485 /* TimeViewController.h */,
+				9A6ACD05195C3C4A001A4485 /* TimeViewController.m */,
+				9A6ACD07195C3D06001A4485 /* MonViewController.h */,
+				9A6ACD08195C3D06001A4485 /* MonViewController.m */,
+				9A6ACD0A195C3D2D001A4485 /* TueViewController.h */,
+				9A6ACD0B195C3D2D001A4485 /* TueViewController.m */,
+				9A6ACD0D195C3D3C001A4485 /* WedViewController.h */,
+				9A6ACD0E195C3D3C001A4485 /* WedViewController.m */,
+				9A6ACD10195C3D87001A4485 /* ThuViewController.h */,
+				9A6ACD11195C3D87001A4485 /* ThuViewController.m */,
+				9A6ACD13195C3D94001A4485 /* FriViewController.h */,
+				9A6ACD14195C3D94001A4485 /* FriViewController.m */,
 				9A6ACCE7195C3BF3001A4485 /* Images.xcassets */,
 				9A6ACCD6195C3BF3001A4485 /* Supporting Files */,
 			);
@@ -251,8 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6ACCE0195C3BF3001A4485 /* iOSAppDelegate.m in Sources */,
+				9A6ACD12195C3D87001A4485 /* ThuViewController.m in Sources */,
 				9A6ACCDC195C3BF3001A4485 /* main.m in Sources */,
-				9A6ACCE6195C3BF3001A4485 /* iOSViewController.m in Sources */,
+				9A6ACD06195C3C4A001A4485 /* TimeViewController.m in Sources */,
+				9A6ACD0F195C3D3C001A4485 /* WedViewController.m in Sources */,
+				9A6ACD0C195C3D2D001A4485 /* TueViewController.m in Sources */,
+				9A6ACD15195C3D94001A4485 /* FriViewController.m in Sources */,
+				9A6ACD09195C3D06001A4485 /* MonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
