@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>941B39E7-4A45-4D80-A210-03F37578B279</string>
+	<string>D8783837-61F1-49CF-8FBA-36D44D37037C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TimeTable</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -13,10 +13,12 @@
 		<key>163C177D-82D5-4C47-8657-B4FEB75E14D9</key>
 		<string>https://github.com/TakehiroKoretsune/CreditAppRepo.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TimeTable.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>163C177D-82D5-4C47-8657-B4FEB75E14D9</key>
-		<string>../../../../CreditAppRepo</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/TakehiroKoretsune/CreditAppRepo.git</string>
