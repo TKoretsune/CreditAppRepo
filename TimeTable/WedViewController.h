@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WedViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tvcell;
 
 @end
