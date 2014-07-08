@@ -12,6 +12,7 @@
 		0D7F571A196B8BFA0094341B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F5713196B8BFA0094341B /* FMDatabasePool.m */; };
 		0D7F571B196B8BFA0094341B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F5715196B8BFA0094341B /* FMDatabaseQueue.m */; };
 		0D7F571C196B8BFA0094341B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F5717196B8BFA0094341B /* FMResultSet.m */; };
+		0D7F571E196B8D8C0094341B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7F571D196B8D8C0094341B /* libsqlite3.0.dylib */; };
 		9A6ACCD0195C3BF2001A4485 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6ACCCF195C3BF2001A4485 /* Foundation.framework */; };
 		9A6ACCD2195C3BF2001A4485 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6ACCD1195C3BF2001A4485 /* CoreGraphics.framework */; };
 		9A6ACCD4195C3BF2001A4485 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6ACCD3195C3BF2001A4485 /* UIKit.framework */; };
@@ -54,6 +55,7 @@
 		0D7F5715196B8BFA0094341B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../../../Downloads/fmdb-master/src/fmdb/FMDatabaseQueue.m"; sourceTree = "<group>"; };
 		0D7F5716196B8BFA0094341B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../../Downloads/fmdb-master/src/fmdb/FMResultSet.h"; sourceTree = "<group>"; };
 		0D7F5717196B8BFA0094341B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../../../Downloads/fmdb-master/src/fmdb/FMResultSet.m"; sourceTree = "<group>"; };
+		0D7F571D196B8D8C0094341B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		9A6ACCCC195C3BF2001A4485 /* TimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6ACCCF195C3BF2001A4485 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9A6ACCD1195C3BF2001A4485 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7F571E196B8D8C0094341B /* libsqlite3.0.dylib in Frameworks */,
 				9A6ACCD2195C3BF2001A4485 /* CoreGraphics.framework in Frameworks */,
 				9A6ACCD4195C3BF2001A4485 /* UIKit.framework in Frameworks */,
 				9A6ACCD0195C3BF2001A4485 /* Foundation.framework in Frameworks */,
@@ -131,6 +134,7 @@
 		9A6ACCCE195C3BF2001A4485 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D7F571D196B8D8C0094341B /* libsqlite3.0.dylib */,
 				9A6ACCCF195C3BF2001A4485 /* Foundation.framework */,
 				9A6ACCD1195C3BF2001A4485 /* CoreGraphics.framework */,
 				9A6ACCD3195C3BF2001A4485 /* UIKit.framework */,
