@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FriViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tvcell;
 
 @end

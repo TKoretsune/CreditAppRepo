@@ -10,4 +10,5 @@
 
 @interface ThuViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *tvcell;
 @end
