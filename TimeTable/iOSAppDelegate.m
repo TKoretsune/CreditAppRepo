@@ -16,8 +16,8 @@
     return YES;
 }
 
-test
 
+//test
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
