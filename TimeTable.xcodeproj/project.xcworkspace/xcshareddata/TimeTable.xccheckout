@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>941B39E7-4A45-4D80-A210-03F37578B279</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TimeTable</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>163C177D-82D5-4C47-8657-B4FEB75E14D9</key>
+		<string>https://github.com/TakehiroKoretsune/CreditAppRepo.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>163C177D-82D5-4C47-8657-B4FEB75E14D9</key>
+		<string>../../../../CreditAppRepo</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TakehiroKoretsune/CreditAppRepo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>163C177D-82D5-4C47-8657-B4FEB75E14D9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>163C177D-82D5-4C47-8657-B4FEB75E14D9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CreditAppRepo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
