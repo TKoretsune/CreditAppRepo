@@ -36,11 +36,41 @@
         NSString *sql3 = @"CREATE TABLE timetable (id INTEGER PRIMARY KEY AUTOINCREMENT, term TEXT, day TEXT, hour INTEGER, subject TEXT, toom TEXT, brand TEXT, attendance INTEGER, credit INTEGER, completed INTEGER);";
         //userテーブル
         NSString *sql4 = @"CREATE TABLE user (id INTEGER PRIMARY KEY AUTOINCREMENT, university TEXT, department TEXT, discipline TEXT, year INTEGER);";
+        
+        
+        
+        
+        
+        //立命限定
+        //立命のカリキュラムをテーブルに追加
+        
+        NSString *sql5 = @"INSERT INTO curriculum (university, department, discipline, year, brand) VALUES (?,?,?,?,?)";
+        
+        
+        
+        //確認
+        
+        NSString *sql6 = @"SELECT * FROM curriculum";
+        
+        
+        
         [db open]; //DB開く
         [db executeUpdate:sql1]; //SQL実行
         [db executeUpdate:sql2]; //SQL実行
         [db executeUpdate:sql3]; //SQL実行
         [db executeUpdate:sql4]; //SQL実行
+        
+        [db executeUpdate:sql5, @"立命館大学", @"情報理工学部", @"情報システム学科", 2014, @"卒業単位数"]; //SQL実行
+        [db executeUpdate:sql5, @"立命館大学", @"情報理工学部", @"情報システム学科", 2014, @"外国語科目"]; //SQL実行
+        [db executeUpdate:sql5, @"立命館大学", @"情報理工学部", @"情報システム学科", 2014, @"教養科目"]; //SQL実行
+        [db executeUpdate:sql5, @"立命館大学", @"情報理工学部", @"情報システム学科", 2014, @"専門科目"]; //SQL実行
+        
+        
+        
+        NSLog(<#NSString *format, ...#>)
+        
+        
+        
         [db close]; //DB閉じる
     }
     
