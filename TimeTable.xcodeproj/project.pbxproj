@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7F5718196B8BFA0094341B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F570F196B8BFA0094341B /* FMDatabase.m */; };
+		0D7F5719196B8BFA0094341B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F5711196B8BFA0094341B /* FMDatabaseAdditions.m */; };
+		0D7F571A196B8BFA0094341B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F5713196B8BFA0094341B /* FMDatabasePool.m */; };
+		0D7F571B196B8BFA0094341B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F5715196B8BFA0094341B /* FMDatabaseQueue.m */; };
+		0D7F571C196B8BFA0094341B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F5717196B8BFA0094341B /* FMResultSet.m */; };
 		9A6ACCD0195C3BF2001A4485 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6ACCCF195C3BF2001A4485 /* Foundation.framework */; };
 		9A6ACCD2195C3BF2001A4485 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6ACCD1195C3BF2001A4485 /* CoreGraphics.framework */; };
 		9A6ACCD4195C3BF2001A4485 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6ACCD3195C3BF2001A4485 /* UIKit.framework */; };
@@ -39,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D7F570E196B8BFA0094341B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../../../Downloads/fmdb-master/src/fmdb/FMDatabase.h"; sourceTree = "<group>"; };
+		0D7F570F196B8BFA0094341B /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../../../Downloads/fmdb-master/src/fmdb/FMDatabase.m"; sourceTree = "<group>"; };
+		0D7F5710196B8BFA0094341B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../../../Downloads/fmdb-master/src/fmdb/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
+		0D7F5711196B8BFA0094341B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../../../Downloads/fmdb-master/src/fmdb/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
+		0D7F5712196B8BFA0094341B /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../../Downloads/fmdb-master/src/fmdb/FMDatabasePool.h"; sourceTree = "<group>"; };
+		0D7F5713196B8BFA0094341B /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../../../Downloads/fmdb-master/src/fmdb/FMDatabasePool.m"; sourceTree = "<group>"; };
+		0D7F5714196B8BFA0094341B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../../../Downloads/fmdb-master/src/fmdb/FMDatabaseQueue.h"; sourceTree = "<group>"; };
+		0D7F5715196B8BFA0094341B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../../../Downloads/fmdb-master/src/fmdb/FMDatabaseQueue.m"; sourceTree = "<group>"; };
+		0D7F5716196B8BFA0094341B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../../Downloads/fmdb-master/src/fmdb/FMResultSet.h"; sourceTree = "<group>"; };
+		0D7F5717196B8BFA0094341B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../../../Downloads/fmdb-master/src/fmdb/FMResultSet.m"; sourceTree = "<group>"; };
 		9A6ACCCC195C3BF2001A4485 /* TimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6ACCCF195C3BF2001A4485 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9A6ACCD1195C3BF2001A4485 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,6 +158,16 @@
 				9A6ACD13195C3D94001A4485 /* FriViewController.h */,
 				9A6ACD14195C3D94001A4485 /* FriViewController.m */,
 				9A6ACCE7195C3BF3001A4485 /* Images.xcassets */,
+				0D7F570E196B8BFA0094341B /* FMDatabase.h */,
+				0D7F570F196B8BFA0094341B /* FMDatabase.m */,
+				0D7F5710196B8BFA0094341B /* FMDatabaseAdditions.h */,
+				0D7F5711196B8BFA0094341B /* FMDatabaseAdditions.m */,
+				0D7F5712196B8BFA0094341B /* FMDatabasePool.h */,
+				0D7F5713196B8BFA0094341B /* FMDatabasePool.m */,
+				0D7F5714196B8BFA0094341B /* FMDatabaseQueue.h */,
+				0D7F5715196B8BFA0094341B /* FMDatabaseQueue.m */,
+				0D7F5716196B8BFA0094341B /* FMResultSet.h */,
+				0D7F5717196B8BFA0094341B /* FMResultSet.m */,
 				9A6ACCD6195C3BF3001A4485 /* Supporting Files */,
 			);
 			path = TimeTable;
@@ -278,11 +303,16 @@
 				9A6ACCE0195C3BF3001A4485 /* iOSAppDelegate.m in Sources */,
 				9A6ACD12195C3D87001A4485 /* ThuViewController.m in Sources */,
 				9A6ACCDC195C3BF3001A4485 /* main.m in Sources */,
+				0D7F5718196B8BFA0094341B /* FMDatabase.m in Sources */,
 				9A6ACD06195C3C4A001A4485 /* TimeViewController.m in Sources */,
+				0D7F571B196B8BFA0094341B /* FMDatabaseQueue.m in Sources */,
+				0D7F571C196B8BFA0094341B /* FMResultSet.m in Sources */,
+				0D7F571A196B8BFA0094341B /* FMDatabasePool.m in Sources */,
 				9A6ACD0F195C3D3C001A4485 /* WedViewController.m in Sources */,
 				9A6ACD0C195C3D2D001A4485 /* TueViewController.m in Sources */,
 				9A6ACD15195C3D94001A4485 /* FriViewController.m in Sources */,
 				9A6ACD09195C3D06001A4485 /* MonViewController.m in Sources */,
+				0D7F5719196B8BFA0094341B /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +517,7 @@
 				9A6ACD00195C3BF3001A4485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A6ACD01195C3BF3001A4485 /* Build configuration list for PBXNativeTarget "TimeTableTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +526,7 @@
 				9A6ACD03195C3BF3001A4485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
