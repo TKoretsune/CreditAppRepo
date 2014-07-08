@@ -15,7 +15,7 @@
 {
     // Override point for customization after application launch.
    
-    
+    //tests
     
     //データベースの作成
     //テーブル4つ作成しておく

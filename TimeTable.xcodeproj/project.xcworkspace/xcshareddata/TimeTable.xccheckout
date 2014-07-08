@@ -10,8 +10,8 @@
 	<string>TimeTable</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>163C177D-82D5-4C47-8657-B4FEB75E14D9</key>
-		<string>https://github.com/TakehiroKoretsune/CreditAppRepo.git</string>
+		<key>DE2E56AA-2D98-4D10-8087-690AC3D2BB7C</key>
+		<string>https://github.com/gucci-megane/CreditApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TimeTable.xcodeproj/project.xcworkspace</string>
@@ -21,20 +21,20 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/TakehiroKoretsune/CreditAppRepo.git</string>
+	<string>https://github.com/gucci-megane/CreditApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>163C177D-82D5-4C47-8657-B4FEB75E14D9</string>
+	<string>DE2E56AA-2D98-4D10-8087-690AC3D2BB7C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>163C177D-82D5-4C47-8657-B4FEB75E14D9</string>
+			<string>DE2E56AA-2D98-4D10-8087-690AC3D2BB7C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CreditAppRepo</string>
+			<string>CreditAppexp</string>
 		</dict>
 	</array>
 </dict>
