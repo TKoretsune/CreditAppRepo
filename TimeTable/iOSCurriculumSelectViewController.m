@@ -15,28 +15,45 @@
     //[self showPicker];
     // Do any additional setup after loading the view, typically from a nib.
     
+    
     [super viewDidLoad];
     
-    picker = [[UIPickerView alloc] init];
-    picker.frame = CGRectMake(0, 420, 320, 216);
-    picker.showsSelectionIndicator = YES;
-    picker.hidden = YES;
-    picker.delegate = self;
-    picker.dataSource = self;
-    [self.view addSubview:picker];
+    picker1 = [[UIPickerView alloc] init];
+    picker1.frame = CGRectMake(0, 420, 320, 216);
+    picker1.showsSelectionIndicator = YES;
+    picker1.hidden = YES;
+    picker1.delegate = self;
+    picker1.dataSource = self;
+    picker1.tag = 1;
+    picker1.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:picker1];
+
+    picker2 = [[UIPickerView alloc] init];
+    picker2.frame = CGRectMake(0, 420, 320, 216);
+    picker2.showsSelectionIndicator = YES;
+    picker2.hidden = YES;
+    picker2.delegate = self;
+    picker2.dataSource = self;
+    picker2.tag = 2;
+    picker2.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:picker2];
+
+    picker3 = [[UIPickerView alloc] init];
+    picker3.frame = CGRectMake(0, 420, 320, 216);
+    picker3.showsSelectionIndicator = YES;
+    picker3.hidden = YES;
+    picker3.delegate = self;
+    picker3.dataSource = self;
+    picker3.tag = 3;
+    picker3.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:picker3];
+
+    
+    
     
     //テキスト1つめ
     _textField1.delegate = self;
     _textField1.tag=1;
-    
-    
-    //テキスト2,3はまだできてない
-    
-    
-    
-    
-    
-    
     
     
     //テキスト2つめ
@@ -53,10 +70,27 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
     //テキストフィールドの編集を始めるときに、ピッカーを呼び出す。
-    [self showPicker];
+    
+    if (textField.tag == 1) {
+        
+    [self showPicker1];
     
     //キーボードは表示させない
     return NO;
+        
+    }else if(textField.tag == 2) {
+        
+        [self showPicker2];
+        
+        //キーボードは表示させない
+        return NO;
+    }else{
+        [self showPicker3];
+        
+        //キーボードは表示させない
+        return NO;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,13 +101,44 @@
 
 
 
-- (void)showPicker {
+- (void)showPicker1 {
     [UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:0.2];
 	[UIView setAnimationDelegate:self];
-	picker.frame = CGRectMake(0, 204, 320, 216);
+	picker1.frame = CGRectMake(0, 204, 320, 216);
 	[UIView commitAnimations];
-	picker.hidden = NO;
+	picker1.hidden = NO;
+    
+	//ナビゲーションバーの右上にdoneボタンを設置する
+ 	if (!_navi.rightBarButtonItem) {
+        UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done:)];
+        [_navi setRightBarButtonItem:done animated:YES];
+    }
+}
+
+- (void)showPicker2 {
+    [UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.2];
+	[UIView setAnimationDelegate:self];
+	picker2.frame = CGRectMake(0, 204, 320, 216);
+	[UIView commitAnimations];
+	picker2.hidden = NO;
+    
+	//ナビゲーションバーの右上にdoneボタンを設置する
+ 	if (!_navi.rightBarButtonItem) {
+        UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done:)];
+        [_navi setRightBarButtonItem:done animated:YES];
+    }
+}
+
+
+- (void)showPicker3 {
+    [UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.2];
+	[UIView setAnimationDelegate:self];
+	picker3.frame = CGRectMake(0, 204, 320, 216);
+	[UIView commitAnimations];
+	picker3.hidden = NO;
     
 	//ナビゲーションバーの右上にdoneボタンを設置する
  	if (!_navi.rightBarButtonItem) {
@@ -84,24 +149,38 @@
 
 
 
+
+
+
 - (void)done:(id)sender {
 	//ピッカーをしまう
 	[self hidePicker];
-	
+    
 	//doneボタンを消す
     [_navi setRightBarButtonItem:nil animated:YES];
     
 }
 
 - (void)hidePicker {
-    picker.hidden = YES;
+    picker1.hidden = YES;
+    picker2.hidden = YES;
+    picker3.hidden = YES;
+    
     //ピッカーを下に隠すアニメーション
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:0.2];
 	[UIView setAnimationDelegate:self];
-	picker.frame = CGRectMake(0, 420, 320, 216);
+	picker1.frame = CGRectMake(0, 420, 320, 216);
+    picker2.frame = CGRectMake(0, 420, 320, 216);
+    picker3.frame = CGRectMake(0, 420, 320, 216);
 	[UIView commitAnimations];
 }
+
+
+
+
+
+
 
 //区切りの数（コンポーネント）
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -113,24 +192,34 @@
     return 1;
 }
 
+
+
 //表示
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [NSString stringWithFormat:@"立命館大学"];
+    //dbから取得
+    if(pickerView.tag == 1){
+        return [NSString stringWithFormat:@"立命館大学"];
+    }else if(pickerView.tag == 2){
+        return [NSString stringWithFormat:@"情報理工学部"];
+    }else{
+        return [NSString stringWithFormat:@"2014"];
+    }
 }
 
 //選択完了時に呼ばれる
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    //選択行を返す
-    NSLog(@"test");
-    _textField1.text=[NSString stringWithFormat:@"立命館大学"];
+    //dbから取得
     
-    
-    //tagで選択できるようにする
-    
-    _textField2.text=[NSString stringWithFormat:@"立命館大学"];
-    
-    _textField3.text=[NSString stringWithFormat:@"立命館大学"];
-    
+    if(pickerView.tag == 1){
+        //大学
+        _textField1.text=[NSString stringWithFormat:@"立命館大学"];
+    }else if(pickerView.tag == 2){
+        //学部
+        _textField2.text=[NSString stringWithFormat:@"情報理工学部"];
+    }else{
+        //入学年度
+        _textField3.text=[NSString stringWithFormat:@"2014"];
+    }
 }
 
 

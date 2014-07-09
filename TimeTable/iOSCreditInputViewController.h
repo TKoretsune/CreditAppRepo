@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iOSCurriculumRegistViewController.h"
 
-@interface iOSCreditInputViewController : UIViewController
+@interface iOSCreditInputViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

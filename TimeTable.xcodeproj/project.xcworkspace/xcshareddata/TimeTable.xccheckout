@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>54B8F732-83F8-444F-83F4-855D416D0AEE</string>
+	<string>F7744A05-5229-4445-A2EC-77BD58152309</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TimeTable</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DE2E56AA-2D98-4D10-8087-690AC3D2BB7C</key>
-		<string>https://github.com/gucci-megane/CreditApp.git</string>
+		<key>163C177D-82D5-4C47-8657-B4FEB75E14D9</key>
+		<string>https://github.com/TakehiroKoretsune/CreditAppRepo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TimeTable.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DE2E56AA-2D98-4D10-8087-690AC3D2BB7C</key>
+		<key>163C177D-82D5-4C47-8657-B4FEB75E14D9</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/gucci-megane/CreditApp.git</string>
+	<string>https://github.com/TakehiroKoretsune/CreditAppRepo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DE2E56AA-2D98-4D10-8087-690AC3D2BB7C</string>
+	<string>163C177D-82D5-4C47-8657-B4FEB75E14D9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DE2E56AA-2D98-4D10-8087-690AC3D2BB7C</string>
+			<string>163C177D-82D5-4C47-8657-B4FEB75E14D9</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CreditAppexp</string>
+			<string>CreditAppRepo</string>
 		</dict>
 	</array>
 </dict>

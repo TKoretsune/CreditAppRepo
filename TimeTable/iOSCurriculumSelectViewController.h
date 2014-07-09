@@ -10,7 +10,9 @@
 
 @interface iOSCurriculumSelectViewController : UIViewController <UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate>
 {
-    UIPickerView *picker;
+    UIPickerView *picker1;
+    UIPickerView *picker2;
+    UIPickerView *picker3;
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *textField1;

@@ -101,7 +101,8 @@
     
     
     
-    NSString *select = [[NSString alloc] initWithFormat:@"SELECT * from timetable"];
+//    NSString *select = [[NSString alloc] initWithFormat:@"SELECT * from timetable"];
+    NSString *select = @"SELECT * from timetable";
     //DBを開く場合
     [db open];
     FMResultSet *rs = [db executeQuery:select];
@@ -155,8 +156,6 @@
     {
         tvcell.textLabel.text = [[NSString alloc] initWithFormat:@"%d限 ",indexPath.row + 1 ];
     }
-    
-    
     
     return tvcell;
     
