@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iUQ-m4-lVb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iUQ-m4-lVb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -290,7 +290,7 @@
         <!--IOS Credit Input View Controller-->
         <scene sceneID="WA5-ld-nfX">
             <objects>
-                <viewController storyboardIdentifier="2" id="wbE-Kq-Eg3" customClass="iOSCreditInputViewController" sceneMemberID="viewController">
+                <viewController id="wbE-Kq-Eg3" customClass="iOSCreditInputViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jOF-3c-dAl"/>
                         <viewControllerLayoutGuide type="bottom" id="rje-iO-dUm"/>
@@ -367,7 +367,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="IaE-t6-IdN" kind="modal" id="tAp-gs-pMe"/>
+                                                        <segue destination="IaE-t6-IdN" kind="modal" identifier="toRegist" id="AxV-Li-Phu"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -390,7 +390,7 @@
         <!--IOS Curriculum Regist View Controller-->
         <scene sceneID="VQf-r0-n09">
             <objects>
-                <viewController storyboardIdentifier="3" id="IaE-t6-IdN" customClass="iOSCurriculumRegistViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="iOSCurriculumRegistViewController" storyboardIdentifier="iOSCurriculumRegistViewController" id="IaE-t6-IdN" customClass="iOSCurriculumRegistViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jtA-0F-q4y"/>
                         <viewControllerLayoutGuide type="bottom" id="mEM-YJ-aLl"/>
@@ -521,7 +521,7 @@
                                 </state>
                                 <connections>
                                     <action selector="pushButton:" destination="IaE-t6-IdN" eventType="touchUpInside" id="SwS-0e-tAR"/>
-                                    <segue destination="wbE-Kq-Eg3" kind="modal" id="a8Q-vs-uF1"/>
+                                    <segue destination="wbE-Kq-Eg3" kind="modal" identifier="toInput" id="a8Q-vs-uF1"/>
                                 </connections>
                             </button>
                         </subviews>

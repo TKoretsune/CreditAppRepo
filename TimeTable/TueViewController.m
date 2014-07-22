@@ -37,7 +37,7 @@
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES );
     NSString *dir = [paths objectAtIndex:0];
-    FMDatabase *db = [FMDatabase databaseWithPath:[dir stringByAppendingPathComponent:@"Credit.db"]];
+    FMDatabase *db = [FMDatabase databaseWithPath:[dir stringByAppendingPathComponent:@"credit.db"]];
     
     //tableの作成
     NSString *sql = @"CREATE TABLE IF NOT EXISTS timetable (id INTEGER PRIMARY KEY AUTOINCREMENT, term TEXT, day TEXT, hour INTEGER, subject TEXT, toom TEXT, brand TEXT, attendance INTEGER, credit INTEGER, completed INTEGER);";

@@ -291,15 +291,14 @@
     NSString *tmp2 = _creditText.text;
     db_credit = [tmp2 intValue];
     
-    NSLog(@"%d", db_hour);
-    NSLog(@"%d", db_credit);
     
-
     //completeした場合
     db_completed = 1;
     
+   
     
     
+    NSLog(@"%@",preBrand);
     
     
     //??
@@ -310,15 +309,13 @@
     
     
     
-    
-    
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES );
     NSString *dir = [paths objectAtIndex:0];
     FMDatabase *db = [FMDatabase databaseWithPath:[dir stringByAppendingPathComponent:@"credit.db"]];
 
     
     NSString *sql = [[NSString alloc] initWithFormat:@"INSERT INTO timetable(term, day, hour, subject, teacher, room, brand, credit, completed) VALUES('%@','%@','%d','%@','%@','%@','%@','%d','%d')", db_term, db_week, db_hour, db_subject, db_teaacher, db_room, db_brand, db_credit, db_completed];
+    
     [db open];
     [db executeUpdate:sql]; //SQL実行
     [db close];

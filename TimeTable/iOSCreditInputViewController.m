@@ -10,10 +10,13 @@
 #import "FMDatabase.h"
 #import "FMDatabaseAdditions.h"
 
+
 @interface iOSCreditInputViewController (){
     NSMutableArray *db_brand;
     NSString *db_subject;
     int db_credit;
+    NSString *transferWord;
+    iOSCurriculumRegistViewController *viewCon;
 }
 
 @end
@@ -107,18 +110,28 @@
     CGPoint point = [touch locationInView:_tableView];
     NSIndexPath *indexPath = [_tableView indexPathForRowAtPoint:point];
     
-    // ログを出力
-    NSLog(@"row : %d", indexPath.row);
     
-    //rowをきろくしておく。
+    //iOSCurriculumRegistViewController *viewCon = (iOSCurriculumRegistViewController *)[segue destinationViewController];
+    transferWord = [db_brand objectAtIndex:indexPath.row];
     
+    viewCon.preBrand = transferWord;
+     //[self performSegueWithIdentifier:@"toRegist" sender:self];
+    //渡しかた
     
-    
-    iOSCurriculumRegistViewController *viewCon;
-    viewCon = [[iOSCurriculumRegistViewController alloc]initWithNibName:@"iOSCurriculumRegistViewController" bundle:nil];
-    viewCon.preBrand = [db_brand objectAtIndex:indexPath.row];
-    NSLog(viewCon.preBrand);
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"toRegist"]){
+        viewCon = (iOSCurriculumRegistViewController *)[segue destinationViewController];
+//        NSLog(@"%@cccccc",transferWord);
+//        if([transferWord length] != 0){
+//            NSLog(@"%@",transferWord);
+//            viewCon.preBrand = [NSString stringWithFormat:@"1"];
+//        }else{
+//            NSLog(@"%@",transferWord);
+//            viewCon.preBrand = [NSString stringWithFormat:@"2"];
+//        }
+    }
+}
 
 @end
